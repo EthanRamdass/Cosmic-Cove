@@ -1,0 +1,242 @@
+/*** You will not need this file until Unit 3 ***/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+	scroll-padding-top: 6vh;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    background-color: #240046;
+    height: 40px;
+}
+nav a{
+    text-decoration: none;
+    font-size: large;
+    margin: 10px;
+    color: white;
+}
+.epic {
+    padding-bottom: 50px;
+    border: #eee;
+    color: transparent;
+    background: linear-gradient(to right,
+    indigo, purple, blue, orange, red, darkred, black);
+    -webkit-background-clip: text;
+}
+body{
+    background-color: #E0AAFF;
+    text-align: center;
+
+}
+a:link{
+    color: orange;   
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: aliceblue;
+}
+a:active{
+    color: yellow;
+}
+h1{
+    font-size: 300%;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 200%;
+}
+h3{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+p { 
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+margin-left: 15%;
+margin-right: 15%;
+}
+img {
+height: 40%;
+width: 45%;
+padding-bottom: 30px;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: wrap;
+    padding-bottom: 30px;
+}
+button {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    
+}
+input,label{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background-color: #ffa2a2;
+  }
+  
+.booten {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.dark{
+    color: white;
+    background-color: #121212;
+    transition: 0.3s;
+    
+}
+
+.rsvp-container , #rsvp-form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding-bottom: 20px;
+}
+
+.description, .roster {
+    display: flex;
+    flex-direction: row;
+}
+
+body.dark-theme {
+    background-color: #111;
+    color: #eee;
+  }
+  
+#theme-toggle {
+    background: #FFD700;
+    color: #4B0082;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+  /* RSVP Styling */
+  #rsvp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  #rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+  }
+  
+  #rsvp-participants {
+    width: 60%;
+    padding-right: 10px;
+  }
+  
+  /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container {
+    padding: 50px;
+    width: 55%;
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input.error {
+    border: 2px solid red;
+    background-color: #ffd6d6;
+  }
+/* Add this to CSS */
+body.dark-theme {
+    background-color: #111;
+    color: white;
+  }
+
+#modal-img{
+    padding-top: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#likeCount{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#dislikeCount{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+hr {
+    height: 4px;
+    background-color: #10002B;
+    border-color: black;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    margin: 2%;
+}
+
+#header-img {
+    margin-top: 40px;
+    width: 60%;
+    border-color: #eee;
+}
+
+div{
+    padding-bottom: 20px;
+}
+
+#link{
+    font-size: 150%;
+}
+
