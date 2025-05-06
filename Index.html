@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet"  href="styles.css" />
+        <!-- head
+        
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Cosmic Cove</title>
+        <style>
+            /* Style rules go here. */
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <a href="#header-img">Home</a>
+                <a href="#about">About</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#link">Link</a>
+                <button id="dark">Toggle Dark-Mode</button>
+            </nav>
+        </header>
+    
+        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYmHzVcAtxz8TZSKHXsoW50l9O99VMPxoog&s"/>
+        <div class="epic">
+        <h1>Cosmic Cove</h1>
+        <hr>
+        </div>
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+
+        <div>
+        <h2 id="about">About the Event</h2>
+        <p>This Event has all of the greatest Exospheric Past-times! We'll host a banquet in a Drifting Space Resturant. </p>
+        <h3>Events That Are Out of This World!</h3>
+        <ul>
+            <li> <b>Galactic Gastronomy:</b> <i>Taste flavors you never imagined—nebula noodles, asteroid stew, and comet crème brûlée, served with a panoramic view of the stars.</i>
+            </li>
+            <li> 
+            <b>Astro-Entertainment:</b> <i>Enjoy cosmic karaoke, black hole trivia, and our exclusive anti-gravity dance party hosted by DJ Andromeda.</i></li>
+            <li> <b>Quantum Relaxation:</b> <i>Recharge your particles with a cosmic spa experience featuring solar-powered massages and deep-space aromatherapy.
+
+            </i></li>
+        </ul>
+        </div>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule">Event Schedule</h2>
+        <div class="img-container">
+            <img alt="Image description" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE87czX1wpAH4u-SXIRNtRxXUx0ZS6QAcXQw&s"/> 
+            <div class="booten">
+                <button id="like-button">👍</button>
+                <p id="likeCount">0</p> <!-- changed from button to span -->
+                <button id="dislike-button">👎</button>
+                <p id="dislikeCount">0</p> 
+              </div>
+                
+            <h2>Primordial Essence Gathering</h2>
+            <h3>Interstellar Space Dust Market</h3>
+            <p>We have top-of-the-line space dust to examine and enjoy! For the right price, you too could own a vial of shimmering galactic powder—an absolute must for collectors who crave that “just-traveled-the-universe” aesthetic.</p>
+        </div>
+        
+        <div class="img-container">   
+            <img alt="Image description" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CmHubrSTYCDYg_5FkjVVST473MrR4AGmPA&s"/>
+            <div class="booten">
+              <button id="like-button">👍</button>
+              <p id="likeCount">0</p> <!-- changed from button to span -->
+              <button id="dislike-button">👎</button>
+              <p id="dislikeCount">0</p> 
+            </div>
+            <h2>The Starry-Night Hotel</h2>
+            <h3>Sleep Among the Stars</h3>
+            <p>
+              Get ready to have the BEST sleep of your life in our specially reserved space-themed hotel room! Complete with oxygen-controlled climate, AI-guided dream simulators, and soft-serve starlight pillows.
+            </p>
+        </div>
+        <div class="img-container">
+        <img alt="Image description" src="data:image/jpeg;base64,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"/>
+        <div class="booten">
+          <button id="like-button">👍</button>
+          <p id="likeCount">0</p> <!-- changed from button to span -->
+          <button id="dislike-button">👎</button>
+          <p id="dislikeCount">0</p> 
+        </div>
+        <h2>Spaceship Racing</h2>
+        <h3>The Cosmic Grand Prix</h3>
+        <p>Zoom and Zip with our ultra-light- Top of the Line Space Ships! Race Against Others In this Fierce Competition of Extraterrestrial Vehicular Scuttle! Only the swiftest will claim the Galactic Trophy!</p>
+        </div>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        
+          <!-- RSVP Section -->
+  <section id="rsvp">
+    <h3>RSVP HERE!</h2>
+    <div id="rsvp-container">
+      <div id="rsvp-para">
+        <p>
+          🚀 Ready to Launch into the Experience?
+          Sign up now to beam us your contact details across the stars! By registering, you’ll help us craft a personalized galactic journey just for you—complete with exclusive updates, stellar surprises, and cosmic experiences tailored to your space-time preferences.
+        </p>
+      </div>
+      
+
+<!-- Modal -->
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+      <div id="modal-text"></div>
+      <div><img id="modal-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yVxxsdsOi1wz9QXgvnzjjyvVrPHauTdXLQ&s" alt="Astronaut" width="100" /></div>
+    </div>
+  </div>
+  
+  <!-- RSVP Section -->
+  <div id="rsvp">
+    <div class="rsvp-container">
+      <div class="rsvp-para">
+        <p>Join our space party and RSVP below!</p>
+      </div>
+  
+      <div class="rsvp-participants" id="rsvp-participants">
+        <p>🎟️ DJ from Saturn has RSVP'd.</p>
+        <p>🎟️ Amy from Venus has RSVP'd.</p>
+        <p>🎟️ Teresa from Mars has RSVP'd.</p>
+        <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+      </div>
+    </div>
+  
+    <div class="form-container">
+      <form id="rsvp-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+  
+        <label for="planet">Planet:</label>
+        <input type="text" id="planet" name="planet" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <button id="rsvp-button" type="submit">RSVP</button>
+      </form>
+    </div>
+  </div>
+</div>
+  <div>
+    <footer>
+      <hr>
+      <a href="https://youtu.be/Sf4oFaelTr4?si=_PbhZvwaVhRyIB5a" class="epic" id="link">Click Here For a Video Tour!</a>
+    </footer>
+  </div>
+  
+  
+                  
+        <script src="index.js" defer></script>
+        
+
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] ethanramdass8@gmail.com -->
+
+    </body>
+</html>
